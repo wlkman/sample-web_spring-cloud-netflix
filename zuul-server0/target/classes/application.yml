@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: zuul0
+zuul:
+  routes:
+    users:
+      path: /test/**
+      service-id: springbootapp
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
