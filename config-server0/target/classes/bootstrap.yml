@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: springbootconfig
+  profiles:
+    active: native

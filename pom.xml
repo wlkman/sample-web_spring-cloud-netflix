@@ -13,6 +13,7 @@
         <module>springboot-app1</module>
         <module>springboot-app2</module>
         <module>zuul-server0</module>
+        <module>config-server0</module>
     </modules>
 
     <parent>
