@@ -1,5 +1,5 @@
 spring:
   application:
-    name: springbootconfig
+    name: springcloudconfig
   profiles:
     active: native
