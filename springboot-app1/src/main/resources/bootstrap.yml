@@ -11,3 +11,11 @@ spring:
       discovery:
         enabled: true
         serviceId: springcloudconfig
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://cuixb:1@localhost:8761/eureka/
+
+#eureka:
+#  instance:
+#    preferIpAddress: true
