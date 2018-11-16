@@ -14,6 +14,7 @@
         <module>springboot-app2</module>
         <module>zuul-server0</module>
         <module>config-server0</module>
+        <module>eureka-server1</module>
     </modules>
 
     <parent>

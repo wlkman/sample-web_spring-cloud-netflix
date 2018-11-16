@@ -1,0 +1,18 @@
+server:
+  port: 8762
+
+eureka:
+  instance:
+    hostname: localhost
+#    preferIpAddress: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+#    healthcheck:
+#      enabled: true
+    serviceUrl:
+      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+security:
+  user:
+    name: cuixb2
+    password: 2
