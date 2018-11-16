@@ -21,6 +21,9 @@ eureka:
 #eureka:
 #  instance:
 #    preferIpAddress: true
+
+
+# refresh config through http://localhost:8902/refresh on post method with no parameter
 management:
   security:
     enabled: false

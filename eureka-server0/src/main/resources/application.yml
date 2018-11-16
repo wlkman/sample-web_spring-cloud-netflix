@@ -1,17 +1,22 @@
+spring:
+  application:
+    name: eureka
+
 server:
   port: 8761
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: peer1
 #    preferIpAddress: true
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
 #    healthcheck:
 #      enabled: true
+    #http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/,
     serviceUrl:
-      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://cuixb2:2@peer2:8762/eureka/
 security:
   user:
     name: cuixb
