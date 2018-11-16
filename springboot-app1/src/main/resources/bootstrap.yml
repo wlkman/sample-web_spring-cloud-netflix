@@ -8,6 +8,8 @@ spring:
   #      uri: http://localhost:8801/
   cloud:
     config:
+      profile: dev
+      label: springbootapp
       discovery:
         enabled: true
         serviceId: springcloudconfig
