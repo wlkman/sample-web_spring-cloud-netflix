@@ -1,1 +1,3 @@
-com\cuixb\springboot_app1\App.class
+sample\config\SecurityConfig.class
+sample\Application.class
+sample\config\WebMvcConfig.class
