@@ -9,7 +9,6 @@ zuul:
       path: /test/**
       service-id: springbootapp
       sensitiveHeaders: "*"
-      
 eureka:
   client:
     serviceUrl:
