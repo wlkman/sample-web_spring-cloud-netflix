@@ -36,10 +36,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 			.authorizeRequests()
 //				.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
+				.antMatchers("/api/**","/plugins/**","/cuixb/**/*.js","/cuixb/**/*.css", "/refresh").permitAll()
 				.anyRequest().authenticated()
-				.and()
-			.formLogin()
-				.permitAll();
+			.and()
+				.formLogin()
+				.permitAll()
+			.and()
+				.csrf().disable();//如果不disable掉csrf，第三方（postman直接调等）调用/api不会跳过authentication
 	}
 	// end::config[]
 	// @formatter:on

@@ -1,3 +1,4 @@
 sample\config\SecurityConfig.class
 sample\Application.class
+sample\controller\HomeContoller.class
 sample\config\WebMvcConfig.class
