@@ -1,3 +1,5 @@
+sample\config\SessionSharing\CuixbCookieSerializer.class
+sample\config\SessionSharingConfig.class
 sample\config\SecurityConfig.class
 sample\Application.class
 sample\controller\HomeContoller.class
