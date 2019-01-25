@@ -55,7 +55,7 @@ public class CuixbCookieSerializer implements CookieSerializer {
 
     private String jvmRoute;
 
-    private boolean useBase64Encoding = true;
+    private boolean useBase64Encoding = false;
 
     private String rememberMeRequestAttribute;
 
@@ -122,6 +122,7 @@ public class CuixbCookieSerializer implements CookieSerializer {
         if (domain != null && domain.length() > 0) {
             validateDomain(domain);
             sb.append("; Domain=").append(domain);
+//            sb.append("; Domain=").append("dir.svc.accenture.com");
         }
         String path = getCookiePath(request);
         if (path != null && path.length() > 0) {
@@ -137,7 +138,7 @@ public class CuixbCookieSerializer implements CookieSerializer {
         if (this.sameSite != null) {
             sb.append("; SameSite=").append(this.sameSite);
         }
-
+        System.out.println("Set-Cookie:"+sb.toString());
         response.addHeader("Set-Cookie", sb.toString());
     }
 

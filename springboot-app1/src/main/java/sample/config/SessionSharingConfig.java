@@ -10,11 +10,11 @@ import sample.config.SessionSharing.CuixbCookieSerializer;
 @EnableRedisHttpSession
 public class SessionSharingConfig {
 
-    @Bean
-    public CookieHttpSessionStrategy cookieHttpSessionStrategy() {
-        CookieHttpSessionStrategy strategy = new CookieHttpSessionStrategy();
-        strategy.setCookieSerializer(new CuixbCookieSerializer());
-        return strategy;
-    }
+//    @Bean
+//    public CookieHttpSessionStrategy cookieHttpSessionStrategy() {
+//        CookieHttpSessionStrategy strategy = new CookieHttpSessionStrategy();
+//        strategy.setCookieSerializer(new CuixbCookieSerializer());
+//        return strategy;
+//    }
 
 }
