@@ -14,6 +14,7 @@ public class SessionSharingConfig {
 //    public CookieHttpSessionStrategy cookieHttpSessionStrategy() {
 //        CookieHttpSessionStrategy strategy = new CookieHttpSessionStrategy();
 //        strategy.setCookieSerializer(new CuixbCookieSerializer());
+//        System.out.println("cuixb create CookieHttpSessionStrategy by CuixbCookieSerializer");
 //        return strategy;
 //    }
 

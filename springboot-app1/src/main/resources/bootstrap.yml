@@ -1,5 +1,6 @@
 server:
   port: 8902
+
 spring:
   application:
     name: springbootapp

@@ -33,6 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	// tag::config[]
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
+		System.out.println("cuixb spring security");
 		http
 			.authorizeRequests()
 //				.requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
